@@ -1,0 +1,26 @@
+1.
+	1. In browser JS we are interacting with the DOM. But in NodeJS we do not so we dont have the document, window and location objects.
+	2. In browser JS we dont have APIs for accessing filesystem functionality. But in NodeJS we have these features.
+	3. In browser JS we might need to write older JS code for cross compatibility with older browser versions being used by clients.In NodeJS we can control the environment. We can write our code in whichever version of Node if we are not conecerned with cross compatibility.
+	4. In Browser JS we can see ES Modules being implemented while in NodeJS we use the CommonJS module system.
+	5. Node has 'global' which is a predefined global object. It has several functions that are not available in browsers. Browser JS may have object named 'global' but it will be exact one as 'window'.
+
+2.
+
+	1. First HTML and CSS are parsed. In the parsing phase all the tags are validated through the tokenizer. This process will create the Parse tree(DOM tree).
+	2. Both the DOM tree and the CSS Object Model are pushed and combined. This is the actual representation of what we actually see and it is not a 1 to 1 mapping of the HTML. 
+	3. In Layout process the placement of the objests in the browser window takes place. Browser applies all the styles in the page and determines the placement of the elements in the page.
+	4. Paint is the process where Browser takes all information from the render tree and create layers. Eg handling the background color, images, shadows. etc.
+	5. Performance is the process of making the website fast and can be applied by loading most important parts of the site/app to load first. For eg. we can put important CSS into the style tag within the HTML code so that it loads fast.
+
+4.
+
+typeof(1)->number
+typeof(1.1)->number
+typeof('1.1')->string
+typeof(true)->boolena
+typeof(null)->object
+typeof(undefined)->undefined
+typeof([])->object
+typeof({})->object
+typeof(NaN)->number
